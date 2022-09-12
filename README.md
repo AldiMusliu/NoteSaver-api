@@ -3,7 +3,7 @@
 
 ## Env Config
   
-    DB_URL=mongodb://localhost:27017/superhero
+    DB_URL=mongodb://localhost:27017/note-saver
     SALT=10
     JWT_SECRET=apksjdkoasnmdkaskasncasjdn;oacjn;dnj;adc;jknajkld;
     JWT_FORGOT_PASSWORD_SECRET=ojashdahsodoaisdnklakcaksakcka
@@ -13,7 +13,4 @@
     EMAIL = 
     EMAIL_PASS = 
     EMAIL_PORT=2525
-
-    ADMIN_EMAIL=
-    ADMIN_PASS=
 
