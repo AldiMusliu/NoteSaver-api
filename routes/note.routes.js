@@ -7,7 +7,6 @@ const { verifyToken } = require('../middleware/auth.middleware')
 router.get('/all', verifyToken, async (req, res) => {
   const usertoken = req.headers.authorization;
   var decoded = JSON.parse(Buffer.from(usertoken.split('.')[1], 'base64').toString());
-  console.log(decoded._id);
   try{
     const result = await noteController.getNotes({user_id: decoded._id})
     res.json(jsonResponse(result))
